@@ -48,11 +48,10 @@ function App() {
   useEffect(() => {
     setCountries(filter?.length > 0 ?
       countryData.filter((country) => {
-        let { common, official } = country.name;
+        let { common } = country.name;
         common = common.toLowerCase();
-        official = official.toLocaleLowerCase();
         const thisFilter = filter.toLowerCase();
-        return common.includes(thisFilter) || official.includes(thisFilter);
+        return common.includes(thisFilter);
       }) :
       countryData
     ) 
