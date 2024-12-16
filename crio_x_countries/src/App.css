@@ -5,6 +5,12 @@
   padding: 20px;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -12,7 +18,7 @@
   padding: 20px 0;
 }
 
-.flag {
+.countryCard {
   border: 1px solid #D3D3D3;
   border-radius: 6px;
   padding: 10px;
@@ -22,13 +28,13 @@
   gap: 1.5rem;
 }
 
-.flag img {
+.countryCard img {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
 }
 
-.flag p {
+.countryCard p {
   margin: 0;
   text-align: center;
   font-weight: 500;
