@@ -59,9 +59,9 @@ function App() {
 
   return (
     <div className="container">
-      <nav>
+      <div className="nav">
         <input type="text" value={filter} onChange={(e) => setFilter(e.target.value)} />
-      </nav>
+      </div>
       <div className="grid">
         {countries.map((country, cIdx) => ( // Some countries are apparently repeated, idk if they are meant to not be included
           <CountryFlag
